@@ -7,7 +7,7 @@ exports.getAllUsers = (req, res) => {
 exports.postAllUsers = (req, res) => {
   const user = {
     id: uuidv4(),
-    name: req.query.userName,
+    name: req.query.name,
     email: req.query.email,
   };
   users.push(user);
