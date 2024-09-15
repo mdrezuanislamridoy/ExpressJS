@@ -17,7 +17,6 @@ app.get("/", (req, res) => {
 app.use((req, res) => {
   res.status(404).json({ message: "Page Not Found" });
 });
-
 // server err
 app.use((err, req, res, next) => {
   res.status(5000).json({ message: "Something went wrong" });
